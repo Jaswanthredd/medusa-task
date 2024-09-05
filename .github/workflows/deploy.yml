@@ -54,7 +54,7 @@ jobs:
 
     - name: Deploy to ECS using Fargate
       run: |
-        aws ecs update-service --cluster your-cluster-name \
-          --service your-service-name \
+        aws ecs update-service --cluster medusa-cluster \
+          --service medusa-service \
           --force-new-deployment
 
